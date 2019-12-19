@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 namespace Crosscutting
 {
     public static class PointExtensions
@@ -23,6 +24,10 @@ namespace Crosscutting
                 p.X--;
             }
             return p;
+        }
+        public static int ManhattanDistance(this Point srcPoint, Point destPoint)
+        {
+            return Math.Abs(destPoint.X - srcPoint.X) + Math.Abs(destPoint.Y - srcPoint.Y);
         }
     }
 }
