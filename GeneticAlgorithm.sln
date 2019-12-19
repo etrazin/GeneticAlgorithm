@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneticAlgorithm", "GeneticAlgorithm\GeneticAlgorithm.csproj", "{ECEFD599-9C1C-4834-A663-28FCF4C077D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeneticAlgorithm", "GeneticAlgorithm\GeneticAlgorithm.csproj", "{ECEFD599-9C1C-4834-A663-28FCF4C077D3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PopulationGeneration", "PopulationGeneration\PopulationGeneration.csproj", "{0983C613-54A2-4CC1-BE4B-18C5386E55C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crosscutting", "Crosscutting\Crosscutting.csproj", "{494FA84F-FFEF-4017-980C-51C60A7E3F94}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{ECEFD599-9C1C-4834-A663-28FCF4C077D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECEFD599-9C1C-4834-A663-28FCF4C077D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECEFD599-9C1C-4834-A663-28FCF4C077D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0983C613-54A2-4CC1-BE4B-18C5386E55C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0983C613-54A2-4CC1-BE4B-18C5386E55C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0983C613-54A2-4CC1-BE4B-18C5386E55C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0983C613-54A2-4CC1-BE4B-18C5386E55C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{494FA84F-FFEF-4017-980C-51C60A7E3F94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{494FA84F-FFEF-4017-980C-51C60A7E3F94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{494FA84F-FFEF-4017-980C-51C60A7E3F94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{494FA84F-FFEF-4017-980C-51C60A7E3F94}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
