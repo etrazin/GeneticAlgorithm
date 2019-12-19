@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeneticAlgorithm", "Genetic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PopulationGeneration", "PopulationGeneration\PopulationGeneration.csproj", "{0983C613-54A2-4CC1-BE4B-18C5386E55C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crosscutting", "Crosscutting\Crosscutting.csproj", "{494FA84F-FFEF-4017-980C-51C60A7E3F94}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Crosscutting", "Crosscutting\Crosscutting.csproj", "{494FA84F-FFEF-4017-980C-51C60A7E3F94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObstacleGeneration", "ObstacleGeneration\ObstacleGeneration.csproj", "{1C436F5C-BA60-49FD-A6FF-435F045E1EA4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{494FA84F-FFEF-4017-980C-51C60A7E3F94}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{494FA84F-FFEF-4017-980C-51C60A7E3F94}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{494FA84F-FFEF-4017-980C-51C60A7E3F94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C436F5C-BA60-49FD-A6FF-435F045E1EA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C436F5C-BA60-49FD-A6FF-435F045E1EA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C436F5C-BA60-49FD-A6FF-435F045E1EA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C436F5C-BA60-49FD-A6FF-435F045E1EA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
