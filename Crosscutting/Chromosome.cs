@@ -7,7 +7,7 @@ namespace Crosscutting
         private const int ZERO = 0;
         public string PathString { get; set; }
         public double Score { get; set; }
-        public Point PathStringToCoordinates()
+        public Point PathStringToEndCoordinates()
         {           
             Point currentLocation = new Point(0, 0);
             foreach (char direction in PathString.ToCharArray())
