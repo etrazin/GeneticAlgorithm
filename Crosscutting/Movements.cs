@@ -1,5 +1,6 @@
 ﻿namespace Crosscutting
 {
+    //represents the options for robot movements
     public enum Movements
     {
         //up
