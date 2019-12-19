@@ -3,6 +3,6 @@
     public class Chromosome
     {
         public string PathString { get; set; }
-        public double FitnessValue { get; set; }
+        public double Score { get; set; }
     }
 }
