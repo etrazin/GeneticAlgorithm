@@ -2,9 +2,15 @@
 {
     public enum Movements
     {
-        Up=0,
-        Right,
-        Down,
-        Left
+        //up
+        //right
+        //down
+        //left
+
+        U = 0,
+        R,
+        D,
+        L
+        
     }
 }
