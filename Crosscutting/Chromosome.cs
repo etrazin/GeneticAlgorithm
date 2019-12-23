@@ -9,9 +9,15 @@ namespace Crosscutting
         #endregion
 
         public string PathString { get; set; }
-        //further distance from end point means higher score
-        public double Score { get; set; }
-        //fitness value in relation to other chromosomes
+        
+        //let board size = n (meaning the board has n*n squares)
+        //score = 2*n minus chromosome's (Manhattan) distance from end point
+        //for example if chromosome ends 3 squares from end point and n=10
+        //then score = 2*10-3=17
+        public int Score { get; set; }
+
+        //fitness value=score/sum of scores
+        //higher score causes higher fitness value
         public double FitnessValue { get; set; }
         public Point PathStringToEndCoordinates()
         {           
