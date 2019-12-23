@@ -4,7 +4,10 @@ namespace Crosscutting
 {
     public class Chromosome
     {
+        #region private
         private const int ZERO = 0;
+        #endregion
+
         public string PathString { get; set; }
         public double Score { get; set; }
         public Point PathStringToEndCoordinates()
