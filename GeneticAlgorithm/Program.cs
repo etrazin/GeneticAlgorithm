@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace GeneticAlgorithm
+namespace GeneticAlgorithmStart
 {
     class Program
     {

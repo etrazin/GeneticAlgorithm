@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeneticAlgorithm", "GeneticAlgorithm\GeneticAlgorithm.csproj", "{ECEFD599-9C1C-4834-A663-28FCF4C077D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeneticAlgorithmStart", "GeneticAlgorithm\GeneticAlgorithmStart.csproj", "{ECEFD599-9C1C-4834-A663-28FCF4C077D3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PopulationGeneration", "PopulationGeneration\PopulationGeneration.csproj", "{0983C613-54A2-4CC1-BE4B-18C5386E55C7}"
 EndProject
