@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Crosscutting\Crosscutting.csproj" />
+    <ProjectReference Include="..\PopulationGeneration\PopulationGeneration.csproj" />
   </ItemGroup>
 
 </Project>
