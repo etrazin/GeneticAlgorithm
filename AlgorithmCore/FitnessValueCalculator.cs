@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-
+using System.Linq;
 namespace AlgorithmCore
 {
     //calculates fitness values for population
@@ -11,7 +11,13 @@ namespace AlgorithmCore
     {
         public List<Chromosome> Calculate(List<Chromosome> population)
         {
-            throw new NotImplementedException();
+            double populationScoresSum = population.Select(chrom => chrom.Score).Sum();
+            foreach (Chromosome chromosome in population)
+            {
+                double fitnessValue = chromosome.Score / populationScoresSum;
+                chromosome.FitnessValue = fitnessValue;
+            }
+            return population;
         }
     }
 }
