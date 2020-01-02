@@ -56,21 +56,43 @@ namespace AlgorithmCore
         //mutation is converting the last char in the path string to 'R'
         private Chromosome ApplyMutation(Chromosome newChromosome)
         {
-            newChromosome.PathString = newChromosome.PathString.Remove(newChromosome.PathString.Length - 1) + "R";
+            //randomly flip all the chars
+            char[] pathAsArray = newChromosome.PathString.ToCharArray();
+            for (int i=0;i<pathAsArray.Length;i++)
+            {
+                int numberFromZeroToThree = _random.Next(0, 4);
+                char newDirection = Enum.GetName(typeof(Movements), numberFromZeroToThree).ToCharArray()[0];
+                pathAsArray[i] = newDirection;
+            }
+            newChromosome.PathString = new string(pathAsArray);
             return newChromosome;
         }
 
-        //crossover and insert new string into parent one
+        //crossover
         private Chromosome Crossover(Chromosome parentOne, Chromosome parentTwo,int crossoverIndex)
         {
+            Chromosome newChromosome = new Chromosome();
             string parentOnePathString = parentOne.PathString;
             string parentTwoPathString = parentTwo.PathString;
+          
+            string beginningOfParentOne = parentOnePathString.Remove(crossoverIndex);
+            string beginningOfParentTwo = parentTwoPathString.Remove(crossoverIndex);
+            string endOfParentOne = parentOnePathString.Substring(crossoverIndex);
+            string endOfParentTwo = parentTwoPathString.Substring(crossoverIndex);
 
-            parentOnePathString = parentOnePathString.Remove(crossoverIndex);
-            parentOnePathString = parentOnePathString + parentTwoPathString.Substring(crossoverIndex);
-            
-            parentOne.PathString = parentOnePathString;
-            return parentOne;
+            string newPathStringOne = beginningOfParentOne + endOfParentTwo;
+            string newPathStringTwo = beginningOfParentTwo + endOfParentOne;
+
+            if (_random.NextDouble() > CROSSOVER_PROBABILITY)
+            {
+                newChromosome.PathString = newPathStringOne;
+            }
+            else
+            {
+                newChromosome.PathString = newPathStringTwo;
+            }
+
+            return newChromosome;
         }
     }
 }
