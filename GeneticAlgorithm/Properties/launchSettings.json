@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "GeneticAlgorithmStart": {
+      "commandName": "Project",
+      "commandLineArgs": "40 10"
+    }
+  }
+}

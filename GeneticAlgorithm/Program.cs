@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AlgorithmCore;
+using System;
 
 namespace GeneticAlgorithmStart
 {
@@ -6,7 +7,10 @@ namespace GeneticAlgorithmStart
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            GeneticAlgorithm geneticAlgorithm = new GeneticAlgorithm();
+            int populationSize = int.Parse(args[0]);
+            int boardSize = int.Parse(args[1]);
+            geneticAlgorithm.RunAlgorithm(populationSize, boardSize);
         }
     }
 }
